@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Max
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        int term = input.nextInt();
+        int max = term;
+        
+        while (term != 0)
+        {
+            if (term > max)
+            {
+                max = term;
+            }
+            
+            term = input.nextInt();
+        }
+        
+        System.out.println("The max is " + max);
+    }
+}
